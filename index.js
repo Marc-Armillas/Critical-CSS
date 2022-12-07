@@ -13,7 +13,7 @@ const URL = process.env.URL || ''
   let criticalCSS = ''
   for (const entry of cssCoverage) {
     for (const range of entry.ranges) {
-      criticalCSS += entry.text.slice(range.start, range.end) + "\n"
+      criticalCSS += entry.text.slice(range.start, range.end)
     }
   }
 
